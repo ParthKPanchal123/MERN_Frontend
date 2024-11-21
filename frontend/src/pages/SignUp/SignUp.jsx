@@ -36,6 +36,8 @@ function SignUp() {
 
     setError("")
 
+    //link update
+
     try {
       const res = await axios.post("https://mern-backend-ss01.onrender.com/api/user/signup", { username: name, email, password }, {withCredentials: true})
 
